@@ -1,6 +1,10 @@
-function Welcome({ name, age }) {
+import { useContext } from "react";
+import UserContext from "../context/UserContext";
+
+function Welcome() {
+    const user = useContext(UserContext);
     return (
-        <h1 className='welcome'>Welcome {name} and you are {age} years old</h1>
+        <h1>Welcome {user}</h1>
     )
 }
 export default Welcome;
