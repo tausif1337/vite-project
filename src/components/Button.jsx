@@ -1,6 +1,6 @@
-function Button({ isLoggedIn }) {
+function Button() {
     return (
-        <button disabled={isLoggedIn}>Login</button>
+        <button>Login</button>
     )
 }
 export default Button;
